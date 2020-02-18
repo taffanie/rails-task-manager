@@ -1,0 +1,16 @@
+<h1>Edit Task</h1>
+
+<%= form_for @task do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <%= f.check_box :completed %>
+  <span>Completed</span>
+  <%= f.submit %>
+<% end %>
+
+<!-- <form action="/tasks/3" method="patch">
+
+
+</form> -->
